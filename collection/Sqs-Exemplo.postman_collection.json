@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "f10993f2-f14d-4a46-9f99-7473c512521f",
+		"name": "Sqs-Exemplo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33347324"
+	},
+	"item": [
+		{
+			"name": "produzir-mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"olá Mensagem: {{$randomCompanyName}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sqs-exemplo/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sqs-exemplo",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
