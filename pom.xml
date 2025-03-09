@@ -33,6 +33,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>net.bytebuddy</groupId>
+			<artifactId>byte-buddy</artifactId>
+			<version>1.17.2</version> <!-- Verifique se essa versão suporta Java 23 -->
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
